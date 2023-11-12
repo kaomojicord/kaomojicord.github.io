@@ -1,0 +1,18 @@
+body {
+  background-color: white;
+}
+
+.container {
+  width: calc(100% * 0.5);
+  height: calc(190px * 0.3);
+  position: relative;
+}
+
+.frame {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  margin-top: -10px;
+}
