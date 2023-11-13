@@ -2,6 +2,11 @@ body {
   background-color: white;
 }
 
+.wrap{
+  width:300px;
+  white-space:normal; 
+}
+
 .container {
   width: calc(100% * 0.5);
   height: calc(190px * 0.3);
@@ -16,3 +21,4 @@ body {
   transform-origin: 0 0;
   margin-top: -10px;
 }
+
