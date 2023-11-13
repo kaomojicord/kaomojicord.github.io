@@ -2,23 +2,39 @@ body {
   background-color: white;
 }
 
-.wrap {
-  width: 300px;
+.title-main {
+  font-size: 6vw;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.title {
+  font-size: 3vw;
+  text-align: center;
+}
+
+.text {
+  /* width: 50vw; */
   white-space: normal; 
+  font-size: 2vw;
+  max-width: 50vw;
+  text-align: center;
+  /*
+  inline-size: 150px;
+  overflow-wrap: break-word;
+  */
 }
 
-.container {
-  width: calc(100% * 0.5);
-  height: calc(190px * 0.3);
-  position: relative;
+.image-alignment {
+  text-align: center;
 }
 
-.frame {
-  width: 500px;
-  height: 200px;
-  position: absolute;
-  transform: scale(0.5);
-  transform-origin: 0 0;
-  margin-top: -10px;
+.image {
+  width: 50vw;
+  height: auto;
 }
 
