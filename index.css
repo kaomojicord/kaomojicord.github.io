@@ -1,40 +1,48 @@
 body {
   background-color: white;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.title-main {
-  font-size: 6vw;
+img {
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.flex-container > div {
+  background-color: transparent;
+  width: clamp(12rem, 48vw, 32rem);;
+  margin: auto;
+  /* border: 5px solid skyblue; */
+  text-align: center;
+  /* line-height: 75px; */
+  font-size: clamp(0.2rem, 2vw, 2rem);
+}
+
+.flex-container > .title {
+  font-size: clamp(1rem, 6vw, 4rem);
+  font-weight: bold;
   text-align: center;
 }
 
-.subtitle {
-  font-size: 1.5vw;
+.flex-container > .subtitle {
+  font-size: clamp(0.3rem, 1.5vw, 4rem);
   text-align: center;
 }
 
-.title {
-  font-size: 3vw;
+.flex-container > .header {
+  font-size: clamp(0.6rem, 3vw, 7rem);;
   text-align: center;
 }
 
-.text {
-  /* width: 50vw; */
-  white-space: normal; 
-  font-size: 2vw;
-  max-width: 50vw;
-  text-align: center;
-  /*
-  inline-size: 150px;
-  overflow-wrap: break-word;
-  */
-}
-
-.image-alignment {
-  text-align: center;
-}
-
-.image {
-  width: 50vw;
+.flex-container > .image {
+  width: 100%;
+  max-width: clamp(10rem, 44vw, 27rem);
   height: auto;
 }
-
