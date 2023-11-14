@@ -19,7 +19,7 @@ body {
 
 .text {
   /* width: 50vw; */
-  white-space: normal; 
+  white-space: normal;
   font-size: 2vw;
   max-width: 50vw;
   text-align: center;
@@ -38,3 +38,10 @@ body {
   height: auto;
 }
 
+/* =========  UL classes ========== */
+
+.nameSpan {
+  font-weight: bold;
+}
+
+/* ================================== */

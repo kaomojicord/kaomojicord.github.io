@@ -57,39 +57,34 @@
       </div>
       <p class="title">vocabulary</p>
       <center>
-        <p class="text">
-          • animesexual — a westernized term by weeaboos who attempt to pass their attraction off as a “sexuality“ & therefore part of the “ALGB+“. the official term would be ›nijikon‹.<br />
-          • cunny — portmanteau for ʼcute and funnyʼ, dogwhistle for lolicons to describe a loli.<br />
-          • cunnysseur — alternatively used to refer to lolicons.<br />
-          • double agent — someone who pretends to get along with two opposed parties in order to share gossip from each party with the other.<br />
-          • fictosexuality — yet another shitty term to describe the sexual attraction towards fictional characters.<br />
-          • gaslighting — a form of social engineering & a systematic pattern of abuse by which the abuser manipulates factual information to give the victim the impression that they cannot trust their own senses.<br />
-          • groupthink — a subtle influence on a highly self-regarding and insular discussion group that deludes them into agreeing to dubious assumptions and plans on the basis that everyone else seemed to think it was a good idea, or at least no one wanted to be the one to speak up in dissent.<br />
-          • kaomoji — japanese version of an emoticon, written vertically.<br />
-          • kusogaki — spoiled shitty brat in a non-erotic context.<br /> 
-          • larping — abbreviation of ʼLive Action Role Playingʼ, an internet slang to refer to put a façade to play out a situation or a lie, often times with malicious intent.<br /> 
-          • mesugaki — brash, devilish loli who teases adult men, usually referred to as a brat & seen in erotic context.<br />
-          • necrobumping — to revive a long dormant forum thread by submitting a new post in order to bump it up all the way to the top of the forum.<br /> 
-          • nijikon — a japanese term to describe an affective perception that two-dimensional anime, manga, and light novel characters are more attractive visually, physically or emotionally than people from the real world.<br /> 
-          • OPSEC — abbreviation of ʼOperational securityʼ, a security and risk management process that prevents sensitive information from getting into the wrong hands.<br /> 
-          • OSINT — abbreviation of ʼOpen Source Intelligenceʼ, the act of gathering and analyzing publicly available data for intelligence purposes - (!) not to be confused with doxxing.<br /> 
-          • overton window — a spectrum/window of what's socially appropriate to talk about and when to do so time wise, usually relevant in politics.<br /> 
-          • persecution complex — an acute irrational fear that other people are plotting one's downfall despite a clear lack of evidence.<br /> 
-          • plapping — the act of slapping a rod against the forehead, cheeks or butt & referenced as a meme in lolicon culture.<br />
-          • proship — a shitty term used in fandom spaces to describe someone who respects others for their fictional pairings & paraphiles irregardless of their own feeling towards said pairing.<br />
-          • schediaphilia — a paraphilia in which a person is sexually attracted to cartoon characters.<br /> 
-          • schizo — derogatory term to describe out of the ordinary peoppe, abbreviation for schizophrenic.<br /> 
-          • shilling — the act of engaging in covert advertising.<br /> 
-          • social-engineering — the attempt to control social behavior.<br /> 
-          • sugarcoat — to make the truth appear less problematic by using fancy pleasant words.<br />
-          • tech-illiterate — similar to computer-illiterate, it refers to someone who lacks knowledge of technology & has a hard time navigating through tech.<br /> 
-          • toonophilia — an alternative term to describe schediaphilia.<br /> 
-          • tranny — short for transvestite, a derogatory term to refer to a transgender person.<br /> 
-          • troon — portmanteau of ʼtransʼ & ʼgoonʼ, yet another derogatory term to refer to a transgender person.<br /> 
-          • ultracrepidarian — one who expresses opinions on matters outside the scope of one's knowledge or expertise, derived from latin words ʼultraʼ & ʼcrepis-idisʼ.<br /> 
-          • YWNBAW — abbreviation for ʼYou Will Never Be A Womanʼ, a derogatory slang against transgender people.<br /> 
-          •  😭 — expression indicating the attractiveness of a loli.<br />
-        </p>
+        <div class="text">
+          <ul id="vocabulary-list">
+            <script type="module">
+             import { vocabulary } from "./script.js";
+
+              const vocabularyList = document.getElementById('vocabulary-list');
+
+              const listItems = vocabulary.map(item => {
+
+                const li = document.createElement('li');
+                const nameSpan = document.createElement('span');
+
+                  nameSpan.textContent = `${item.name}: `;
+                  nameSpan.classList.add('nameSpan');
+
+                  li.appendChild(nameSpan);
+
+                  li.appendChild(document.createTextNode(item.value));
+
+              return li;
+              });
+
+              listItems.forEach(li => {
+                vocabularyList.appendChild(li);
+              });
+            </script>
+          </ul>
+        </div>
       </center>
       <p class="title">the boost influx</p>
       <center>

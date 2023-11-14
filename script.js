@@ -1,0 +1,36 @@
+export const vocabulary = [
+
+    {name: "animesexual", value: "A westernized term by weeaboos wo attempt to pass their attraction off as a 'assexuality' & therefore part of the 'ALGB+“. the official term would be >nijikon<"},
+    {name: "cunny", value: "Portmanteau for 'cute and funny', dogwhistle for lolicons to describe a loli."},
+    {name: "cunnysseur", value: "Alternatively used to refer to lolicons."},
+    {name: "double agent", value: "Someone who pretends to get along with two opposed parties in order to share gossip from each party with the other."},
+    {name: "fictosexuality", value: "Yet another shitty term to describe the sexual attraction towards fictional characters."},
+    {name: "gaslighting", value: "A form of social engineering & a systematic pattern of abuse by which the abuser manipulates factual information to give the victim the impression that they cannot trust their own senses."},
+    {name: "groupthink", value: "A subtle influence on a highly self-regarding and insular discussion group that deludes them into agreeing to dubious assumptions and plans on the basis that everyone else seemed to think it was a good idea, or at least no one wanted to be the one to speak up in dissent."},
+    {name: "kaomoji", value: "Japanese version of an emoticon, written vertically."},
+    {name: "kusogaki", value: "Spoiled shitty brat in a non-erotic context."},
+    {name: "larping", value: "Abbreviation of 'Live Action Role Playing', an internet slang to refer to put a façade to play out a situation, often times with malicious intent."},
+    {name: "mesugaki", value: "Brash, devilish loli who teases adult men, usually referred to as a brat & seen in erotic context."},
+    {name: "necrobumping", value: "To revive a long dormant forum thread by submitting a new post in order to bump it up all the way to the top of the forum."},
+    {name: "nijikon", value: "A japanese term to describe an affective perception that two-dimensional characters are more attractive visually, physically or emotionally than people from the real world."},
+    {name: "OPSEC", value: "Abbreviation of 'Operational security', a security and risk management process that prevents sensitive information from getting into the wrong hands."},
+    {name: "OSINT", value:"Abbreviation of 'Open Source Intelligence', the act of gathering and analyzing publicly available data for intelligence purposes - (!) not to be confused with doxxing."},
+    {name: "overton window", value: "A spectrum/window of what's socially appropriate to talk about and when to do so time wise, usually relevant in politics."},
+    {name: "persecution complex", value: "An acute irrational fear that other people are plotting one's downfall despite a clear lack of evidence."},
+    {name: "plapping", value: "The act of slapping a rod against the forehead, cheeks or butt & referenced as a meme in lolicon culture."},
+    {name: "proship", value: "A shitty term used in fandom spaces to describe someone who respects others for their fictional pairings & paraphiles irregardless of their own feeling towards said pairing."},
+    {name: "schediaphilia", value: "A paraphilia in which a person is sexually attracted to cartoon characters."},
+    {name: "schizo", value: "A derogatory term to describe out of the ordinary people, abbreviation for schizophrenic."},
+    {name: "shilling", value: "The act of engaging in covert advertising."},
+    {name: "social-engineering", value: "The attempt to control social behavior."},
+    {name: "sugarcoat", value: "To make the truth appear less problematic by using fancy pleasant words."},
+    {name: "tech-illiterate", value: "Similar to computer-illiterate, it refers to someone who lacks knowledge of technology & has a hard time navigating through tech."},
+    {name: "toonophilia", value: "An alternative term to describe schediaphilia."},
+    {name: "tranny", value: "Short for transvestite, a derogatory term to refer to a transgender person."},
+    {name: "troon", value: "Portmanteau of 'trans' & 'goon', yet another derogatory term to refer to a transgender person."},
+    {name: "ultracrepidarian", value: "One who expresses opinions on matters outside the scope of one's knowledge or expertise, derived from latin words 'ultra' & 'crepis-idis'."},
+    {name: "YWNBAW", value: "Abbreviation of 'You Will Never Be A Woman', a derogatory slang against transgender people."},
+    {name: "😭", value: "Expression indicating the attractiveness of a loli."}
+
+
+]
