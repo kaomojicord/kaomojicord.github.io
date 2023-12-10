@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="index.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- kawaii desu ne~ (✿◠‿◠) -->
-    <meta content="٩(^ᴗ^)۶" property="og:title"/>
-    <meta content="All about our kawaii kaomoji & otaku world! (´• ω •`) ♡" property="og:description"/>
-    <meta content="https://embed.com/this-is-the-site-url" property="og:url"/>
-    <meta content="https://media.discordapp.net/attachments/moe-kawaii-link.png" property="og:image"/>
-    <meta content="#2C2F33" data-react-helmet="true" name="theme-color"/>
-    <title>ヽ(＾Д＾)ﾉ Kaomoji Kingdom!</title>
-  </head>
-  <body>
-    <main>
-      <div class="flex-container">
-        <p class="title">Welcome to Kaomoji Kingdom! </p>
-        <img class="image" src="https://count.getloli.com/get/@kaomojicord?theme=gelbooru-h" alt="webcounter">
-        <p class="subtitle">last updated on: 11/21/23, version 2.4 desu~ (｡♥‿♥｡)</p>
-        <div>The Elitist Superstructure of Kaomoji Kingdom (✧ω✧) is a moe-rorikon-themed social hangout on Discord, run by a secret group of 'elitists' ne~.</div>
-        <img class="banner" src="https://media.discordapp.net/attachments/cute-banner.png" alt="cunny"> 
+<head>
+  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- kawaii desu ne~ (✿◠‿◠) -->
+  <meta content="٩(^ᴗ^)۶" property="og:title"/>
+  <meta content="All about our kawaii kaomoji & otaku world! (´• ω •`) ♡" property="og:description"/>
+  <meta content="https://embed.com/this-is-the-site-url" property="og:url"/>
+  <meta content="https://media.discordapp.net/attachments/moe-kawaii-link.png" property="og:image"/>
+  <meta content="#2C2F33" data-react-helmet="true" name="theme-color"/>
+  <title>ヽ(＾Д＾)ﾉ Kaomoji Kingdom!</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <main>
+    <div class="flex-container">
+      <p class="title">Welcome to Kaomoji Kingdom! ヾ(≧▽≦*)o</p>
+      <img class="image" src="https://count.getloli.com/get/@kaomojicord?theme=gelbooru-h" alt="webcounter">
+      <p class="subtitle" id="last-updated">Fetching latest update...</p>
+      <div>The Elitist Superstructure of Kaomoji Kingdom (✧ω✧) is a moe-rorikon-themed social hangout on Discord, run by a secret group of 'elitists' ne~.</div>
+      <img class="banner" src="https://media.discordapp.net/attachments/cute-banner.png" alt="cunny">
+    </div>
+  </main>
+
+  <script>
+    async function fetchRepoData() {
+      try {
+        const response = await axios.get('https://api.github.com/repos/kaomojicord/kaomojicord.github.io');
+        const data = response.data;
+        const lastUpdatedElement = document.getElementById('last-updated');
+        lastUpdatedElement.textContent = `Last updated on: ${new Date(data.pushed_at).toLocaleDateString()}, version ${data.default_branch}`;
+      } catch (error) {
+        console.error('Error fetching repository data:', error);
+      }
+    }
+
+    fetchRepoData();
+  </script>
+</body>
+</html>
 
         <div id="wrapper">
           <header>inspiration</header>
